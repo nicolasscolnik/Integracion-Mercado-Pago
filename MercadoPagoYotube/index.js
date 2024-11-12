@@ -112,7 +112,7 @@ import cors from "cors";
 import { MercadoPagoConfig, Preference} from "mercadopago";
 
 
-const client = new MercadoPagoConfig({accessToken: "XXXXXXXXXXXXXXXXXXXXXX"})
+const client = new MercadoPagoConfig({accessToken: "APP_USR-2895292226517850-110717-f814a027703fac30e6e1888c13963103-256622141"})
 
 
 const app = express();
@@ -160,7 +160,8 @@ app.post("/create_preferences", async (req,res)=>{
         const result = await preferences.create({body});
         console.log(result);
         res.json({
-            url:result.sandbox_init_point
+            url:result.sandbox_init_point,
+            id:result.id,
         });
     } catch (error) {
         console.log(error);

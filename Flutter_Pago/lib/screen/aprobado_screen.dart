@@ -9,7 +9,7 @@ class AprobadoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Aprobado'),
+        child: Text('Aprobado IÑAKI LAPUTISIMA MADRE QUE LO REMIL PARIO'),
      ),
    );
   }
